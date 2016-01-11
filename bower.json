@@ -1,0 +1,21 @@
+{
+  "name": "react-amp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Bryan Garzon B",
+    "@garbray"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

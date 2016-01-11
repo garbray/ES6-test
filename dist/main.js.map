@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":[],"mappings":";;AAAA,IAAI,IAAI,GAAG,SAAP,IAAI,GAAS;AAChB,QAAO,MAAM,CAAC;CACd,CAAA","file":"main.js","sourcesContent":["var demo = () => {\n\treturn 'lala';\n}"],"sourceRoot":"/source/"}
