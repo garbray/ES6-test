@@ -2,7 +2,6 @@
 // for reference review https://dzone.com/articles/code-coverage-jasmine-tests
 //http://ariya.ofilabs.com/2012/12/javascript-code-coverage-with-istanbul.html
 
-
 describe("sqrt", () => {
     it("should compute the square root of 4 as 2", function() {
 	    expect(My.sqrt(4)).toEqual(2);
@@ -13,8 +12,6 @@ describe("sqrt", () => {
 	    toThrow(new Error("sqrt can't work on negative number"));
 	});
 });
-
-
 
 describe('ES6 Foo', function () {
 
