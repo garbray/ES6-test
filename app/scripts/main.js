@@ -1,15 +1,16 @@
-//TODO make al the examples to review all the transpailer code
+// TODO make al the examples to review all the transpailer code
 var My = {
-  sqrt: x => {
-    if (x < 0) throw new Error("sqrt can't work on negative number");
-      return Math.exp(Math.log(x)/2);
-  }
+    sqrt: x => {
+    if (x < 0) throw new Error("sqrt can't work on negative number")
+      	return Math.exp(Math.log(x) / 2);
+    },
 };
 
 class Foo {
     doSomething() {
-        return 'Do Something';
-    }
+	    return 'Do Something';
+	}
 };
 
 // export default Foo;
+export default Foo;
