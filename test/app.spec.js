@@ -22,7 +22,18 @@ describe('ES6 Foo', () => {
     foo = new Foo();
   });
 
+  it('should secondLet be undefined because block scoped variable', () => {
+    expect(foo.secondLet).toEqual(undefined);
+  });
+
   it('should return Do Something when calling doSomething', () => {
     expect(foo.doSomething()).toEqual('Do Something');
+  });
+});
+
+describe('let validation', () => {
+
+  it('should myLet always be 2', () => {
+    expect(myLet).toEqual(2);
   });
 });
