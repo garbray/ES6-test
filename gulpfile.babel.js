@@ -18,7 +18,7 @@ const dir = {
   srcCss: 'app/styles',
   dest: 'dist',
   destJS: '${dir.dest}/scripts',
-  destCss: '${dir.dest}/styles'
+  destCss: '${dir.dest}/styles',
 };
 
 const sassPaths = {
@@ -30,5 +30,6 @@ const sassPaths = {
 require('./gulp-task/test')(gulp, Server);
 require('./gulp-task/default')(gulp, plugins, dir);
 require('./gulp-task/styles')(gulp, plugins, dir);
+require('./gulp-task/analyze')(gulp, plugins, dir);
 
 // gulp.task('lint', lint('app/scripts/**/*.js'));

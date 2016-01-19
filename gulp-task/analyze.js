@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = function (gulp, plugins, dir) {
 
   gulp.task('analyze', () => {

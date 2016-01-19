@@ -1,5 +1,5 @@
 // Karma configuration
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: '',
     browsers: ['PhantomJS'],
@@ -18,11 +18,11 @@ module.exports = function(config) {
         presets: ['es2015'],
         sourceMap: 'inline',
       },
-      filename: function(file) {
+      filename: function (file) {
         return file.originalPath.replace(/\.js$/, '.es5.js');
       },
 
-      sourceFileName: function(file) {
+      sourceFileName: function (file) {
         return file.originalPath;
       },
     },
