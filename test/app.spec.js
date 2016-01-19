@@ -4,14 +4,14 @@
 //http://ariya.ofilabs.com/2012/12/javascript-code-coverage-with-istanbul.html
 
 describe('sqrt', () => {
-  it('should compute the square root of 4 as 2', function() {
+  it('should compute the square root of 4 as 2', () => {
     expect(My.sqrt(4)).toEqual(2);
-	});
+  });
 
-	it('should throw an exception if given a negative number', function() {
-  expect(function(){ My.sqrt(-1); }).
-    toThrow(new Error('sqrt can\'t work on negative number'));
-	});
+  it('should throw an exception if given a negative number', () => {
+    expect(function () { My.sqrt(-1); })
+      .toThrow(new Error('sqrt can\'t work on negative number'));
+  });
 });
 
 describe('ES6 Foo', () => {

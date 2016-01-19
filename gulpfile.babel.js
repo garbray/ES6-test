@@ -12,17 +12,18 @@ import browserSync from 'browser-sync';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 const Server = require('karma').Server;
+const jscs = require('gulp-jscs');
 
 const dirs = {
   src: 'app',
   srcJs: 'app/scripts',
   srcCss: 'app/styles',
-  dest: 'dist'
+  dest: 'dist',
 };
 
 const sassPaths = {
   src: '${dirs.src}/app.scss',
-  dest: '${dirs.dest}/styles/'
+  dest: '${dirs.dest}/styles/',
 };
 
 /**
@@ -31,21 +32,20 @@ const sassPaths = {
 gulp.task('test', (done) => {
   return new Server({
     configFile: __dirname + '/karma.conf.js',
-    singleRun: true
+    singleRun: true,
   }, done).start();
 });
-
 
 // gulp.task('lint', lint('app/scripts/**/*.js'));
 
 gulp.task('default', () => {
-    return gulp.src(dirs.srcJs + '/**/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist/scripts'));
+  return gulp.src(dirs.srcJs + '/**/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['es2015'],
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('styles', () => {
@@ -55,4 +55,10 @@ gulp.task('styles', () => {
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.dest));
+});
+
+gulp.task('analyze', () => {
+  return gulp.src('app/scripts/main.js')
+    .pipe(jscs())
+    .pipe(jscs.reporter());
 });

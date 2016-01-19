@@ -1,0 +1,43 @@
+/*http://eslint.org/docs/user-guide/configuring#configuring-rules*/
+{
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "restParams": true,
+    "templateStrings": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+  },
+  "rules": {
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "immed": true,
+    "indent": 2,
+    "newcap": "false need checks",
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "plusplus": false,
+    "quotmark": "single",
+    "undef": true,
+    "unused": false,
+    "strict": false,
+    "maxparams": 10,
+    "maxdepth": 5,
+    "maxstatements": 40,
+    "maxcomplexity": 8,
+    "maxlen": 130,
+  }
+}
