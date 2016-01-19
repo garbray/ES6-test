@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="11"  lines-covered="11"  line-rate="1"  branches-valid="12"  branches-covered="8"  branch-rate="0.6667000000000001"  timestamp="1452552695851" complexity="0" version="0.1">
+<coverage lines-valid="11"  lines-covered="11"  line-rate="1"  branches-valid="12"  branches-covered="8"  branch-rate="0.6667000000000001"  timestamp="1452805278346" complexity="0" version="0.1">
 <sources>
-	<source>/Users/bryan/workspace/personal/tests/ES6-test</source>
+	<source>/Users/bgarzon/workspace/personal/ES6-test</source>
 </sources>
 <packages>
 	<package name="scripts"  line-rate="1"  branch-rate="0.6667000000000001" >
@@ -10,42 +10,42 @@
 		<class name="main.js"  filename="app/scripts/main.js"  line-rate="1"  branch-rate="0.6667000000000001" >
 		<methods>
 			<method name="(anonymous_1)"  hits="1"  signature="()V" >
-				<lines><line number="3"  hits="1" /></lines>
-			</method>
-			<method name="defineProperties"  hits="1"  signature="()V" >
-				<lines><line number="3"  hits="1" /></lines>
-			</method>
-			<method name="(anonymous_3)"  hits="1"  signature="()V" >
-				<lines><line number="3"  hits="1" /></lines>
-			</method>
-			<method name="_classCallCheck"  hits="1"  signature="()V" >
 				<lines><line number="5"  hits="1" /></lines>
 			</method>
+			<method name="defineProperties"  hits="1"  signature="()V" >
+				<lines><line number="5"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="1"  signature="()V" >
+				<lines><line number="5"  hits="1" /></lines>
+			</method>
+			<method name="_classCallCheck"  hits="1"  signature="()V" >
+				<lines><line number="7"  hits="1" /></lines>
+			</method>
 			<method name="sqrt"  hits="2"  signature="()V" >
-				<lines><line number="8"  hits="2" /></lines>
+				<lines><line number="10"  hits="2" /></lines>
 			</method>
 			<method name="(anonymous_6)"  hits="1"  signature="()V" >
-				<lines><line number="14"  hits="1" /></lines>
+				<lines><line number="16"  hits="1" /></lines>
 			</method>
 			<method name="Foo"  hits="1"  signature="()V" >
-				<lines><line number="15"  hits="1" /></lines>
+				<lines><line number="17"  hits="1" /></lines>
 			</method>
 			<method name="doSomething"  hits="1"  signature="()V" >
-				<lines><line number="21"  hits="1" /></lines>
+				<lines><line number="23"  hits="1" /></lines>
 			</method>
 		</methods>
 		<lines>
-			<line number="3"  hits="1"  branch="true"  condition-coverage="62.5% (5/8)" />
-			<line number="5"  hits="1"  branch="true"  condition-coverage="50% (1/2)" />
-			<line number="7"  hits="1"  branch="false" />
-			<line number="9"  hits="2"  branch="true"  condition-coverage="100% (2/2)" />
-			<line number="10"  hits="1"  branch="false" />
-			<line number="14"  hits="1"  branch="false" />
-			<line number="15"  hits="1"  branch="false" />
+			<line number="5"  hits="1"  branch="true"  condition-coverage="62.5% (5/8)" />
+			<line number="7"  hits="1"  branch="true"  condition-coverage="50% (1/2)" />
+			<line number="9"  hits="1"  branch="false" />
+			<line number="11"  hits="2"  branch="true"  condition-coverage="100% (2/2)" />
+			<line number="12"  hits="1"  branch="false" />
 			<line number="16"  hits="1"  branch="false" />
-			<line number="19"  hits="1"  branch="false" />
-			<line number="22"  hits="1"  branch="false" />
-			<line number="26"  hits="1"  branch="false" />
+			<line number="17"  hits="1"  branch="false" />
+			<line number="18"  hits="1"  branch="false" />
+			<line number="21"  hits="1"  branch="false" />
+			<line number="24"  hits="1"  branch="false" />
+			<line number="28"  hits="1"  branch="false" />
 		</lines>
 		</class>
 	</classes>

@@ -74,7 +74,11 @@
 29
 30
 31
-32</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+32
+33
+34</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -105,44 +109,46 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; <span class="missing-if-branch" title="else path not taken" >E</span>if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { <span class="missing-if-branch" title="else path not taken" >E</span>if (protoProps) defineProperties(Constructor.prototype, protoProps); <span class="missing-if-branch" title="if path not taken" >I</span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps); </span>return Constructor; }; })();
+// TODO make al the examples to review all the transpailer code
+&nbsp;
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; <span class="missing-if-branch" title="else path not taken" >E</span>if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { <span class="missing-if-branch" title="else path not taken" >E</span>if (protoProps) defineProperties(Constructor.prototype, protoProps); <span class="missing-if-branch" title="if path not taken" >I</span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps); </span>return Constructor; }; }();
 &nbsp;
 function _classCallCheck(instance, Constructor) { <span class="missing-if-branch" title="if path not taken" >I</span>if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} }
 &nbsp;
 var My = {
-  sqrt: function sqrt(x) {
-    if (x &lt; 0) throw new Error("sqrt can't work on negative number");
-    return Math.exp(Math.log(x) / 2);
-  }
+    sqrt: function sqrt(x) {
+        if (x &lt; 0) throw new Error("sqrt can't work on negative number");
+        return Math.exp(Math.log(x) / 2);
+    }
 };
 &nbsp;
-var Foo = (function () {
-  function Foo() {
-    _classCallCheck(this, Foo);
-  }
-&nbsp;
-  _createClass(Foo, [{
-    key: "doSomething",
-    value: function doSomething() {
-      return 'Do Something';
+var Foo = function () {
+    function Foo() {
+        _classCallCheck(this, Foo);
     }
-  }]);
 &nbsp;
-  return Foo;
-})();
+    _createClass(Foo, [{
+        key: 'doSomething',
+        value: function doSomething() {
+            return 'Do Something';
+        }
+    }]);
+&nbsp;
+    return Foo;
+}();
 &nbsp;
 ;
 &nbsp;
 // export default Foo;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9icnlhbi93b3Jrc3BhY2UvcGVyc29uYWwvdGVzdHMvRVM2LXRlc3QvYXBwL3NjcmlwdHMvbWFpbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxJQUFJLEVBQUUsR0FBRztBQUNQLE1BQUksRUFBRSxjQUFBLENBQUMsRUFBSTtBQUNULFFBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxNQUFNLElBQUksS0FBSyxDQUFDLG9DQUFvQyxDQUFDLENBQUM7QUFDL0QsV0FBTyxJQUFJLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUMsQ0FBQyxDQUFDLENBQUM7R0FDbEM7Q0FDRixDQUFDOztJQUVJLEdBQUc7V0FBSCxHQUFHOzBCQUFILEdBQUc7OztlQUFILEdBQUc7O2tDQUVTO0FBQ1YsYUFBTyxjQUFjLENBQUM7S0FDekI7OztTQUpDLEdBQUc7OztBQUtSOzs7QUFBQyIsImZpbGUiOiJtYWluLmVzNS5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBNeSA9IHtcbiAgc3FydDogeCA9PiB7XG4gICAgaWYgKHggPCAwKSB0aHJvdyBuZXcgRXJyb3IoXCJzcXJ0IGNhbid0IHdvcmsgb24gbmVnYXRpdmUgbnVtYmVyXCIpO1xuICAgICAgcmV0dXJuIE1hdGguZXhwKE1hdGgubG9nKHgpLzIpO1xuICB9XG59O1xuXG5jbGFzcyBGb28ge1xuXG4gICAgZG9Tb21ldGhpbmcoKSB7XG4gICAgICAgIHJldHVybiAnRG8gU29tZXRoaW5nJztcbiAgICB9XG59O1xuXG4vLyBleHBvcnQgZGVmYXVsdCBGb287Il19</pre></td></tr>
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZ2Fyem9uL3dvcmtzcGFjZS9wZXJzb25hbC9FUzYtdGVzdC9hcHAvc2NyaXB0cy9tYWluLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFlBQVk7OztBQUFDOzs7OztBQUdiLElBQUksRUFBRSxHQUFHO0FBQ0wsUUFBSSxFQUFFLGNBQUEsQ0FBQyxFQUFJO0FBQ1gsWUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLE1BQU0sSUFBSSxLQUFLLENBQUMsb0NBQW9DLENBQUMsQ0FBQztBQUM3RCxlQUFPLElBQUksQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztLQUNwQztDQUNKLENBQUM7O0lBRUksR0FBRzthQUFILEdBQUc7OEJBQUgsR0FBRzs7O2lCQUFILEdBQUc7O3NDQUNTO0FBQ1YsbUJBQU8sY0FBYyxDQUFDO1NBQ3pCOzs7V0FIQyxHQUFHOzs7QUFJUjs7O0FBQUMiLCJmaWxlIjoibWFpbi5lczUuanMiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5cbi8vIFRPRE8gbWFrZSBhbCB0aGUgZXhhbXBsZXMgdG8gcmV2aWV3IGFsbCB0aGUgdHJhbnNwYWlsZXIgY29kZVxudmFyIE15ID0ge1xuICAgIHNxcnQ6IHggPT4ge1xuICAgIGlmICh4IDwgMCkgdGhyb3cgbmV3IEVycm9yKFwic3FydCBjYW4ndCB3b3JrIG9uIG5lZ2F0aXZlIG51bWJlclwiKTtcbiAgICAgICAgcmV0dXJuIE1hdGguZXhwKE1hdGgubG9nKHgpIC8gMik7XG4gICAgfSxcbn07XG5cbmNsYXNzIEZvbyB7XG4gICAgZG9Tb21ldGhpbmcoKSB7XG4gICAgICAgIHJldHVybiAnRG8gU29tZXRoaW5nJztcbiAgICB9XG59O1xuXG4vLyBleHBvcnQgZGVmYXVsdCBGb287Il19</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 11 2016 17:51:35 GMT-0500 (COT)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jan 14 2016 16:01:18 GMT-0500 (COT)
 </div>
 </div>
 <script src="../prettify.js"></script>
