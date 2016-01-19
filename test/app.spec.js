@@ -30,10 +30,3 @@ describe('ES6 Foo', () => {
     expect(foo.doSomething()).toEqual('Do Something');
   });
 });
-
-describe('let validation', () => {
-
-  it('should myLet always be 2', () => {
-    expect(myLet).toEqual(2);
-  });
-});
