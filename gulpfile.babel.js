@@ -33,3 +33,10 @@ require('./gulp-task/styles')(gulp, plugins, dir);
 require('./gulp-task/analyze')(gulp, plugins, dir);
 
 // gulp.task('lint', lint('app/scripts/**/*.js'));
+
+gulp.task('pre-commit', function () {
+  return gulp.src(plugins.guppy.src('pre-commit'))
+  .gulp.src('app/scripts/main.js')
+  .pipe(plugins.jscs())
+  .pipe(plugins.jscs.reporter());
+});

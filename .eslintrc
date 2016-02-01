@@ -29,5 +29,9 @@
     "maxstatements": [2,40],
     "maxcomplexity": [2,8],
     "maxlen": [2,130],*/
+  },
+  "globals": {
+    "Foo": true,
+    "My": true,
   }
 }
