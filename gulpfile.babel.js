@@ -3,6 +3,7 @@
 //load all dependencies
 import gulp from 'gulp';
 import sass from 'gulp-sass';
+import gutil from 'gulp-util';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 
@@ -29,6 +30,7 @@ const sassPaths = {
 //require tasks
 require('./gulp-task/test')(gulp, Server);
 require('./gulp-task/default')(gulp, plugins, dir);
+require('./gulp-task/html')(gulp, plugins, gutil, dir);
 require('./gulp-task/styles')(gulp, plugins, dir);
 require('./gulp-task/analyze')(gulp, plugins, dir);
 
@@ -39,4 +41,8 @@ gulp.task('pre-commit', function () {
   .gulp.src('app/scripts/main.js')
   .pipe(plugins.jscs())
   .pipe(plugins.jscs.reporter());
+});
+
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+  // return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
