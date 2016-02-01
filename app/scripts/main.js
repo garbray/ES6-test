@@ -2,7 +2,7 @@
 
 // TODO make al the examples to review all the transpailer code
 let myLet = 2;
-const pi = 3.1;
+const pi = 3.1
 
 var My = {
 
